@@ -1,0 +1,122 @@
+/* Analog Collective — minimal black-and-white */
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  color: #000;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
+.nav {
+  font-size: 0.95rem;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.nav .sep {
+  margin: 0 0.5rem;
+  color: #000;
+}
+
+/* Collage */
+.collage {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 2.5rem 0 3rem;
+}
+
+/* Manifesto */
+.manifesto p {
+  margin: 0 0 1rem;
+}
+
+.manifesto .lead {
+  margin-top: 2rem;
+  font-style: italic;
+}
+
+.manifesto .line {
+  margin: 0 0 0.25rem;
+}
+
+/* CTA */
+.cta {
+  margin-top: 3.5rem;
+}
+
+.cta h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  font-size: 1.75rem;
+  margin: 0 0 0.5rem;
+}
+
+.cta p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  body {
+    font-size: 17px;
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .nav {
+    font-size: 0.9rem;
+  }
+
+  .nav .sep {
+    margin: 0 0.25rem;
+  }
+}
